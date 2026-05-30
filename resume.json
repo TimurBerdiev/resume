@@ -1,0 +1,99 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Timur Berdiev",
+    "label": "Full-Stack Software Engineer",
+    "email": "timur.berdiev.96@gmail.com",
+    "phone": "+43 677 61437465",
+    "url": "https://linkedin.com/in/timur-berdiev",
+    "summary": "Software Engineer with strong expertise in full-stack development, specializing in building scalable, resilient systems for data-intensive domains. I lead the development of reliable software that transforms complex operational data into real business value. With a focus on Kotlin, Java, and Spring Boot, I care deeply about clean architecture, performance, and long-term maintainability.",
+    "location": {
+      "city": "Vienna",
+      "countryCode": "AT"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "timur-berdiev",
+        "url": "https://linkedin.com/in/timur-berdiev"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Dynatrace",
+      "position": "Software Engineer",
+      "startDate": "2025-10",
+      "location": "Vienna, Austria"
+    },
+    {
+      "name": "tde",
+      "position": "Software Engineer",
+      "startDate": "2021-01",
+      "endDate": "2025-10",
+      "location": "Leoben, Austria",
+      "summary": "Full-stack developer contributing to the design and development of scalable, data-centric applications that transform operational drilling data into actionable business insights. Work spanned React frontends, TypeScript/Node-based services, Kotlin/Spring APIs, and secure cloud infrastructure.",
+      "highlights": [
+        "Designed and implemented full-stack solutions using React, TypeScript, Kotlin/Spring Boot, and .NET, focusing on robust analytics tools for the oil & gas sector",
+        "Built interactive data visualizations for field engineers and analysts to monitor real-time drilling KPIs and performance metrics",
+        "Developed automated pipelines for secure document parsing and uploading via APIs and email integration, processing large volumes of client reports",
+        "Created a flexible user management system with fine-grained permissions using Keycloak, supporting roles, groups, and access control policies",
+        "Integrated an AI-powered assistant using Amazon Bedrock, allowing users to query systems, invoke APIs, and generate technical documentation via chat",
+        "Participated in agile ceremonies and collaborated closely with product managers, QA, and design to ensure a fast feedback loop and delivery cadence"
+      ],
+      "keywords": ["React", "TypeScript", "Kotlin", "Spring Boot", ".NET", "AWS", "Docker", "REST APIs", "Amazon Bedrock", "Keycloak", "SQL", "Apache Kafka", "Apache Flink"]
+    },
+    {
+      "name": "tde",
+      "position": "Data Analyst",
+      "startDate": "2020-01",
+      "endDate": "2021-01",
+      "location": "Samara, Russia",
+      "summary": "Delivered business intelligence and analytics solutions for drilling operations. Translated client needs into dashboards, reports, and custom tooling to improve data visibility and operational performance.",
+      "highlights": [
+        "Created interactive Power BI dashboards to visualize drilling KPIs and operational metrics",
+        "Developed custom Excel plugins (VBA) for internal automation and reporting",
+        "Conducted training sessions and live demos for engineers and analysts, enabling adoption of analytics tools in field operations",
+        "Advised clients on process optimization using data insights and historical trend analysis"
+      ],
+      "keywords": ["Power BI", "Excel", "VBA", "SQL", "Python"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Montanuniversität Leoben",
+      "area": "Petroleum Engineering",
+      "studyType": "Master",
+      "startDate": "2018",
+      "endDate": "2020"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Backend",
+      "keywords": ["Kotlin", "Java", "Spring Boot", "C#", ".NET"]
+    },
+    {
+      "name": "Frontend",
+      "keywords": ["React", "TypeScript", "JavaScript", "Node.js"]
+    },
+    {
+      "name": "Data & AI",
+      "keywords": ["Amazon Bedrock", "Apache Kafka", "Apache Flink", "SQL", "Python", "Power BI"]
+    },
+    {
+      "name": "Infrastructure & Tools",
+      "keywords": ["AWS", "Docker", "Keycloak", "REST APIs", "System Architecture"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Professional"
+    },
+    {
+      "language": "Russian",
+      "fluency": "Native"
+    }
+  ]
+}
