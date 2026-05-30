@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "resume serve --theme even",
-    "export": "resume export resume.html --theme even"
+    "build": "node build.js",
+    "serve": "node serve.js"
   },
   "keywords": [],
   "author": "",
