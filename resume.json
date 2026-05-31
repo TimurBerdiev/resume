@@ -69,19 +69,23 @@
   "skills": [
     {
       "name": "Backend",
-      "keywords": ["Kotlin", "Java", "Spring Boot", "C#", ".NET"]
+      "keywords": ["Java", "Kotlin", "Spring Boot", "C#", ".NET"]
     },
     {
       "name": "Frontend",
-      "keywords": ["React", "TypeScript", "JavaScript", "Node.js"]
+      "keywords": ["TypeScript", "React", "JavaScript"]
+    },
+    {
+      "name": "Infrastructure",
+      "keywords": ["AWS", "Docker"]
+    },
+    {
+      "name": "Tooling",
+      "keywords": ["Claude Code", "GitHub Copilot", "VS Code", "Git"]
     },
     {
       "name": "Data & AI",
-      "keywords": ["Amazon Bedrock", "Apache Kafka", "Apache Flink", "SQL", "Python", "Power BI"]
-    },
-    {
-      "name": "Infrastructure & Tools",
-      "keywords": ["AWS", "Docker", "Keycloak", "REST APIs", "System Architecture"]
+      "keywords": ["Apache Kafka", "Apache Flink", "SQL", "Amazon Bedrock"]
     }
   ],
   "languages": [
