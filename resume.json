@@ -4,9 +4,8 @@
     "name": "Timur Berdiev",
     "label": "Software Engineer",
     "email": "timur.berdiev.dev@gmail.com",
-    "phone": "+43 677 61437465",
     "url": "https://linkedin.com/in/timur-berdiev",
-    "summary": "Software Engineer with strong expertise in full-stack development, specializing in building scalable, resilient systems for data-intensive domains. I lead the development of reliable software that transforms complex operational data into real business value. With a focus on Kotlin, Java, and Spring Boot, I care deeply about clean architecture, performance, and long-term maintainability.",
+    "summary": "I build software that solves real problems for real people. Technology is a means, not an end — I focus on outcomes, clarity, and long-term value.",
     "location": {
       "city": "Vienna",
       "countryCode": "AT"
