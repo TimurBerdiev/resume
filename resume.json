@@ -24,9 +24,9 @@
       "startDate": "2025-10",
       "location": "Vienna, Austria",
       "highlights": [
-        "Building profiling as a first-class signal in the Dynatrace platform",
-        "Building an IDE plugin that brings Dynatrace observability directly into the developer workflow",
-        "Shipped AI skills, prompts, and MCP integration to surface insights without leaving the editor"
+        "Contributing to Dynatrace's effort to make profiling a first-class observability signal, including support for ingesting, processing, and producing OpenTelemetry profiling data",
+        "Building IDE integration that surfaces runtime context, profiling data, and service-level observability signals while developers work in code",
+        "Shipped AI skills, prompt workflows, and MCP integration that turn Dynatrace data into actionable answers inside developer tooling"
       ]
     },
     {
@@ -36,11 +36,13 @@
       "endDate": "2025-10",
       "location": "Leoben, Austria",
       "highlights": [
-        "Built full-stack analytics tools for drilling operations — React frontends, Kotlin/Spring APIs, .NET services",
-        "Developed real-time dashboards for field engineers to monitor drilling KPIs and performance metrics",
-        "Built document ingestion pipelines processing client reports via APIs and email integration",
-        "Implemented fine-grained access control using Keycloak — roles, groups, and permission policies",
-        "Added an AI assistant (Amazon Bedrock) letting users query data and generate documentation via chat"
+        "Designed and delivered a major extension to the rig state detection algorithm behind tde pronova, the company's core operation-recognition product, improving how raw rig sensor data is translated into operational states and drilling performance KPIs",
+        "Delivered major improvements to tde trace, the real-time visualization UI for rig sensor data, operation states, and performance KPIs, helping engineers investigate drilling activity and validate automated state detection",
+        "Owned architecture for full-stack drilling analytics tools used by 10 internal engineers, 10 major clients, and up to 200 rigs, spanning React frontends, Kotlin/Spring APIs, and .NET services",
+        "Led document ingestion and reporting workflows for roughly 200 daily rig reports plus monthly reports, processing client data through API and email intake instead of repetitive manual entry",
+        "Designed and implemented the Keycloak access-control model for client organizations, defining roles, groups, and permission policies that became the reference pattern for fine-grained product access",
+        "Built the company's first Amazon Bedrock assistant, taking an LLM-powered chat feature from prototype to production so users could query operational data and generate documentation",
+        "Extensively reviewed PRs, onboarded engineers, mentored junior developers, and acted as the go-to owner for core analytics and visualization subsystems"
       ],
       "keywords": ["React", "TypeScript", "Kotlin", "Spring Boot", ".NET", "AWS", "Docker", "REST APIs", "Amazon Bedrock", "Keycloak", "SQL", "Apache Kafka", "Apache Flink"]
     },
@@ -49,10 +51,11 @@
       "position": "Data Analyst",
       "startDate": "2020-01",
       "endDate": "2021-01",
-      "location": "Samara, Russia",
+      "location": "Leoben, Austria",
       "highlights": [
-        "Built Power BI dashboards for drilling KPIs and operational metrics",
-        "Worked directly with field engineers and clients to translate operational data into actionable insights"
+        "Built Power BI dashboards and analytical models for drilling KPIs, operational states, and rig performance metrics used by engineering and client-facing teams",
+        "Worked directly with field engineers and clients to translate drilling operations data into actionable performance insights, building the domain expertise later applied to tde pronova and tde trace",
+        "Automated recurring analysis and reporting workflows with SQL, Python, VBA, and Excel, reducing manual spreadsheet work and improving consistency of client deliverables"
       ],
       "keywords": ["Power BI", "Excel", "VBA", "SQL", "Python"]
     }
@@ -77,7 +80,7 @@
     },
     {
       "name": "Infrastructure",
-      "keywords": ["AWS", "Docker"]
+      "keywords": ["AWS", "Docker", "Kubernetes"]
     },
     {
       "name": "Tooling",
