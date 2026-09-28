@@ -26,16 +26,13 @@ for (const [name, theme] of Object.entries(themes)) {
 
   html = html.replace(
     '<body>',
-    `<body><button class="pdf-button" onclick="window.print()">Create PDF</button>
-    <style>
-      .pdf-button { position: fixed; top: 1rem; right: 1rem; z-index: 1000; padding: .6rem 1rem; border: 0; border-radius: .4rem; color: white; background: #2563eb; cursor: pointer; font: 600 14px system-ui; }
+    `<body><style>
       .size-28 { display: none !important; }
       .space-y-8 > :not([hidden]) ~ :not([hidden]) { margin-top: 1rem !important; }
       .gap-y-3 { row-gap: .35rem !important; }
       .text-muted-foreground br { display: none !important; }
       @media print {
         html { font-size: calc(100% - 1pt) !important; }
-        .pdf-button { display: none; }
         .container { padding: 1rem !important; }
         .space-y-6 > :not([hidden]) ~ :not([hidden]) { margin-top: .6rem !important; }
       }
