@@ -1,7 +1,54 @@
 const fs = require('fs');
-const theme = require('jsonresume-theme-stackoverflow');
+const themes = {
+  tailwind: require('jsonresume-theme-tailwind')
+};
 
 const resume = JSON.parse(fs.readFileSync('./resume.json', 'utf-8'));
-const html = theme.render(resume);
-fs.writeFileSync('./index.html', html);
-console.log('index.html generated');
+
+for (const [name, theme] of Object.entries(themes)) {
+  let html = theme.render(resume);
+
+  // Keep the email and LinkedIn contact details on one line.
+  if (name === 'tailwind') {
+    html = html.replace(
+      '</head>',
+      `<style>
+        .header .contact, .header .profiles {
+          display: inline-flex !important;
+          vertical-align: middle;
+          width: auto !important;
+          margin-top: 0 !important;
+        }
+        .header .profiles { margin-left: 1.25rem !important; }
+      </style></head>`
+    );
+  }
+
+  html = html.replace(
+    '<body>',
+    `<body><button class="pdf-button" onclick="window.print()">Create PDF</button>
+    <style>
+      .pdf-button { position: fixed; top: 1rem; right: 1rem; z-index: 1000; padding: .6rem 1rem; border: 0; border-radius: .4rem; color: white; background: #2563eb; cursor: pointer; font: 600 14px system-ui; }
+      .size-28 { display: none !important; }
+      .space-y-8 > :not([hidden]) ~ :not([hidden]) { margin-top: 1rem !important; }
+      .gap-y-3 { row-gap: .35rem !important; }
+      .text-muted-foreground br { display: none !important; }
+      @media print {
+        html { font-size: calc(100% - 1pt) !important; }
+        .pdf-button { display: none; }
+        .container { padding: 1rem !important; }
+        .space-y-6 > :not([hidden]) ~ :not([hidden]) { margin-top: .6rem !important; }
+      }
+    </style>`
+  );
+
+  fs.writeFileSync(`./${name}.html`, html);
+}
+
+// Provide separate web and PDF-ready versions.
+let webHtml = fs.readFileSync('./tailwind.html', 'utf8');
+webHtml = webHtml.replace('</head>', '<style>html { font-size: 110% !important; }</style></head>');
+fs.writeFileSync('./web.html', webHtml);
+fs.copyFileSync('./tailwind.html', './pdf.html');
+fs.copyFileSync('./web.html', './index.html');
+console.log('Generated web.html and pdf.html');
