@@ -19,7 +19,7 @@
     "clsx": "^2.1.1",
     "jsonresume-theme-even": "^0.26.1",
     "jsonresume-theme-stackoverflow": "^3.3.0",
-    "jsonresume-theme-tailwind": "file:../../../../private/tmp/jsonresume.org/packages/themes/jsonresume-theme-tailwind",
+    "jsonresume-theme-tailwind": "file:vendor/jsonresume-theme-tailwind",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "react-icons": "^5.7.0",
