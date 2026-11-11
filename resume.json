@@ -30,6 +30,9 @@
       "startDate": "2025-10",
       "location": "Vienna, Austria",
       "highlights": [
+        "Built an AI software factory workflow on an internal agent platform that turns engineering requests into pull requests for human review, following each repository's conventions",
+        "Extended the workflow from one team to a reusable setup for other teams, with team-specific configuration and onboarding documentation",
+        "Worked with the AI platform team to identify gaps and improve the underlying platform through production use",
         "Building a profiling application for people and AI agents",
         "Building an IDE plugin for observability"
       ]
